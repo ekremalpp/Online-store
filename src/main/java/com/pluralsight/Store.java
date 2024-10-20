@@ -57,6 +57,23 @@ public class Store {
         //
         // where id is a unique string identifier, name is the product name,
         // price is a double value representing the price of the product
+        try {
+             BufferedReader reader = new BufferedReader(new FileReader(fileName));
+             String line;
+             while ((line = reader.readLine()) != null) {
+                 String[] parts = line.split("//|");
+                 String sku = parts[0];
+                 String productName = parts[1];
+                 double price = Double.parseDouble(parts[2]);
+
+                 Product product = new Product(sku,productName, price);
+                 inventory.add(product);
+
+             }
+
+        } catch (Exception e) {
+            System.err.println("Related file can not exist.");
+        }
 
     }
 
@@ -88,5 +105,6 @@ public class Store {
         // the specified ID, and return the corresponding com.pluralsight.Product object. If
         // no product with the specified ID is found, the method should return
         // null.
+        return null;
     }
 }
