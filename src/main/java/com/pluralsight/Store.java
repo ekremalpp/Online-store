@@ -125,10 +125,24 @@ public class Store {
             totalAmount += product.getPrice();
         }
         System.out.println("Total Amount: " + totalAmount);
-    }
+
+        System.out.println("If you want to continue write 'checkout' please: ");
+        String input = scanner.nextLine();
 
 
+        if (input.equalsIgnoreCase("checkout")) {
+            checkOut(cart, totalAmount);
+        } else if (!input.equalsIgnoreCase("back")) {
+            Product productToRemove = findProductById(input, cart);
+            if(productToRemove !=null) {
+                cart.remove(productToRemove);
+                System.out.println(productToRemove.getProduct() + "has been removed from your cart");
+            } else {
+                System.out.println("Product not found in your cart.");
+            }
 
+        }
+        
     }
 
     public static void checkOut(ArrayList<Product> cart, double totalAmount) {
