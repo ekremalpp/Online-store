@@ -83,6 +83,25 @@ public class Store {
         // prompt the user to enter the ID of the product they want to add to
         // their cart. The method should
         // add the selected product to the cart ArrayList.
+        System.out.println("Available products: ");
+        for (Product product : inventory) {
+            System.out.println(product);
+        }
+
+        System.out.print("Enter the SKU of the product to add to cart or type 'back' to go back: ");
+        String input = scanner.nextLine();
+
+        if (!input.equalsIgnoreCase("back")) {
+            Product selectedProduct = findProductById(input, inventory);
+            if(selectedProduct !=null) {
+                cart.add(selectedProduct);
+                System.out.println(selectedProduct.getProduct() + "has been added to your cart.");
+
+            } else {
+                System.out.println("Product not found ");
+            }
+        }
+
 
 
     }
