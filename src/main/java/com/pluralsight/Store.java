@@ -142,7 +142,7 @@ public class Store {
             }
 
         }
-        
+
     }
 
     public static void checkOut(ArrayList<Product> cart, double totalAmount) {
@@ -150,6 +150,30 @@ public class Store {
         // and display a summary of the purchase to the user. The method should
         // prompt the user to confirm the purchase, and deduct the total cost
         // from their account if they confirm.
+        if(cart.isEmpty()) {
+            System.out.println("Your cart is empty");
+            return;
+        }
+
+        totalAmount = 0.0;
+        for(Product product : cart) {
+            totalAmount += product.getPrice();
+        }
+
+
+        System.out.println("Shopping Summary");
+        System.out.println("---------------------------");
+
+        for (Product product : cart) {
+            System.out.println(product.getProduct()+ "-" +product.getPrice());
+        }
+
+        System.out.println("Total amount" + totalAmount);
+
+        System.out.print("Do you confrim your shopping? (Yes/No):");
+        Scanner scanner = new Scanner(System.in);
+        String confirmation = scanner.nextLine();
+
 
     }
 
