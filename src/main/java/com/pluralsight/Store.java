@@ -112,6 +112,21 @@ public class Store {
         // prompt the user to remove items from their cart by entering the ID
         // of the product they want to remove. The method should update the cart ArrayList and totalAmount
         // variable accordingly.
+        if (cart.isEmpty()) {
+            System.out.println("your cart is empty ");
+            return;
+        }
+
+        System.out.println("items in your cart");
+        totalAmount = 0.0;
+
+        for (Product product : cart) {
+            System.out.println(product);
+            totalAmount += product.getPrice();
+        }
+        System.out.println("Total Amount: " + totalAmount);
+    }
+
 
 
     }
