@@ -8,7 +8,9 @@ Project is an online store application that allows users to easily browse and pu
 
 
 ## User Stories
-
+- As a user, I want to browse available products so that I can find items I want to purchase.
+- As a user, I want to add products to my cart so that I can review my selections before checking out
+- As a user, I want to securely complete my purchase so that I can receive my items without any issues.
 
 
 ## Setup
