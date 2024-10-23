@@ -38,9 +38,16 @@ Follow these steps to get your application running within IntelliJ IDEA:
 - Intellij IDEA.
 
 ## Demo
-
-
-
+Main menu
+![main menu.JPG](imgs%2Fmain%20menu.JPG)
+addet item in the cart
+![addet item on the cart.JPG](imgs%2Faddet%20item%20on%20the%20cart.JPG)
+Product list
+![product list.JPG](imgs%2Fproduct%20list.JPG)
+remove item from the cart
+![removet item from the cart.JPG](imgs%2Fremovet%20item%20from%20the%20cart.JPG)
+shopping is complated
+![Shopping is complated.JPG](imgs%2FShopping%20is%20complated.JPG)
 ## Future Work
 
 Outline potential future enhancements or functionalities you might consider adding:

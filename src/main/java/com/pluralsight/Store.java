@@ -126,7 +126,7 @@ public class Store {
         }
         System.out.println("Total Amount: " + totalAmount);
 
-        System.out.println("If you want to continue write 'checkout' please : ");
+        System.out.println("If you want to continue write 'checkout' or enter SKU to remove an item or write'back' to go back : ");
         String input = scanner.nextLine();
 
 
