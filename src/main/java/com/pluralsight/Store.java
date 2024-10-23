@@ -126,7 +126,7 @@ public class Store {
         }
         System.out.println("Total Amount: " + totalAmount);
 
-        System.out.println("If you want to continue write 'checkout' please: ");
+        System.out.println("If you want to continue write 'checkout' please : ");
         String input = scanner.nextLine();
 
 
@@ -170,14 +170,14 @@ public class Store {
 
         System.out.println("Total amount" + totalAmount);
 
-        System.out.print("Do you confrim your shopping? (Yes/No):");
+        System.out.print("Do you confrim your shopping? (Yes/No) :");
         Scanner scanner = new Scanner(System.in);
         String confirmation = scanner.nextLine();
 
 
 
         if(confirmation.equalsIgnoreCase("Yes")) {
-            System.out.print("Enter Total amount");
+            System.out.print("Enter Total amount :");
             double payment = scanner.nextDouble();
 
             if (payment>= totalAmount) {
