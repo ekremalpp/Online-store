@@ -175,6 +175,27 @@ public class Store {
         String confirmation = scanner.nextLine();
 
 
+
+        if(confirmation.equalsIgnoreCase("Yes")) {
+            System.out.print("Enter Total amount");
+            double payment = scanner.nextDouble();
+
+            if (payment>= totalAmount) {
+                double change = payment - totalAmount;
+                System.out.println("Payment is successful! chance : " +change);
+                System.out.println("Your shopping is completed");
+                cart.clear();
+            } else {
+                System.out.println("There is not enough money. Your shopping couldn't completed ");
+
+            }
+
+        } else {
+            System.out.println("Your shopping cancelled.");
+        }
+
+
+
     }
 
 
