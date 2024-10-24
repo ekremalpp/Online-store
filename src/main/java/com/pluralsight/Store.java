@@ -47,7 +47,7 @@ public class Store {
             }
         }
     }
-
+    // This method reads a CSV file and adds Product objects to the inventory.
     public static void loadInventory(String fileName, ArrayList<Product> inventory) {
         // This method should read a CSV file with product information and
         // populate the inventory ArrayList with com.pluralsight.Product objects. Each line
@@ -76,7 +76,8 @@ public class Store {
         }
 
     }
-
+    // This method shows the list of products in the inventory.
+// It asks the user to enter the SKU of a product to add to their cart.
     public static void displayProducts(ArrayList<Product> inventory, ArrayList<Product> cart, Scanner scanner) {
         // This method should display a list of products from the inventory,
         // and prompt the user to add items to their cart. The method should
@@ -105,7 +106,8 @@ public class Store {
 
 
     }
-
+    // This method displays the items in the cart and the total cost.
+    // It allows the user to remove items or proceed to checkout.
     public static void displayCart(ArrayList<Product> cart, Scanner scanner, double totalAmount) {
         // This method should display the items in the cart ArrayList, along
         // with the total cost of all items in the cart. The method should
@@ -144,7 +146,8 @@ public class Store {
         }
 
     }
-
+    // This method calculates the total cost of items in the cart and shows a summary to the user.
+    // It asks the user to confirm their purchase and processes the payment if confirmed.
     public static void checkOut(ArrayList<Product> cart, double totalAmount) {
         // This method should calculate the total cost of all items in the cart,
         // and display a summary of the purchase to the user. The method should

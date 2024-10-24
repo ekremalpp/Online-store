@@ -2,7 +2,10 @@
 Online Store
 
 ## Description of the Project
-Project is an online store application that allows users to easily browse and purchase products. Users can view the list of available products, add them to their shopping cart, and proceed to checkout. The app keeps inventory up to date by reading product data from a products.csv file.
+Project is an online store application that allows users to easily browse and purchase products.
+Users can view the list of available products, add them to their shopping cart, 
+and proceed to checkout.
+The app keeps inventory up to date by reading product data from a products.csv file.
 
 
 
@@ -53,12 +56,17 @@ shopping is complated
 Outline potential future enhancements or functionalities you might consider adding:
 
 - Additional feature to be developed.
-
+  We can add user accounts so customers can save their carts and view order history.
 
 
 ## Resources
 
 List resources such as tutorials, articles, or documentation that helped you during the project.
+
+-https://github.com/RayMaroun
+-https://yearup.brightspace.com/d2l/home
+-https://www.w3schools.com/java
+-
 
 
 ## Team Members
